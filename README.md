@@ -1,82 +1,38 @@
-## Windows 11 RDP
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fadtitas%2Fngrok-rdp%2F&labelColor=%2314213d&countColor=%23e5e5e5&style=flat-square)
 
-Here this tutorial using Azure Cloud Shell to create Virtual Machine on Microsoft Learn Sandbox. <br><br>
-😎 It's Four Hours RDP Completely Free.
+## Description
+**What is RDP?**<br>
+* RDP (Remote Desktop Protocol) is a network communications protocol developed by Microsoft, which allows users to connect to another computer from a remote location.
 
+**How long does this RDP stay active?**<br>
+* This RDP stays active for up to 6 hours.<br>
 
-## NEW VERSION RELEASE (Win2022/Win10/Win11): 
+## How to use it?
 
-- *Open This : https://docs.microsoft.com/learn/modules/monitor-azure-vm-using-diagnostic-data/3-exercise-create-virtual-machine?activate-azure-sandbox=true*
-- *Click on Activate Sandbox
-- *Paste this into Cloud Shell :
+#### First Step
+1. Press the **fork** button  
+2. Login or signup to ngrok: https://ngrok.com
+3. Now visit here for token: https://dashboard.ngrok.com/auth/your-authtoken
+> You'll get token from here. It'll be needed to the next step.
 
--   ```console  
+#### Second Step
+1. In your forked repo: **Go to Settings > Secrets > Action > New Repository Secret**
+2. In the name section, enter this text: **NGROK_AUTH_TOKEN**
+3. In the value section, enter the **ngrok token**
+4. Then press **Add Secret**
+5. Now go to **Action > AWS (Left Menu) > Run Workflow**
+6. Refresh the page and go to **AWS > build** option
+7. You'll get IP, Username & Password from **Connect to RDP** section.
 
-    curl -skLO bit.do/azurewinvmplus ; chmod +x azurewinvmplus ; ./azurewinvmplus
-    
-    ```
+#### Third Step
+1. Search **Remote Desktop Connection** from Windows Start Menu and open.
+2. Put IP without **tcp://** and enter Username & click **Connect**.
+3. Later on, put the password for credential/auth.
+<img src="https://i.imgur.com/WQr9N1A.png" alt="ss" width="40%"/>
 
-![image](https://user-images.githubusercontent.com/58414694/169801858-96fb462c-1c87-4377-860c-d1f60c50ee2f.png)
+## Screenshots
+<img src="https://i.imgur.com/vgD2owk.png" alt="ss" width="90%"/>
+<img src="https://i.imgur.com/8XBLUqf.png" alt="ss" width="90%"/>
 
-
-### Using Method (Win11-ONLY):
-
-
-- Open This : https://docs.microsoft.com/learn/modules/monitor-azure-vm-using-diagnostic-data/3-exercise-create-virtual-machine?activate-azure-sandbox=true
-- Click on Activate Sandbox
-- Paste this into Cloud Shell:
-
--  ```console  
- 
-    curl -skLO bit.do/azurewin11vm ; chmod +x azurewin11vm ; ./azurewin11vm
-    
-    ```
-- *Enjoy!!*
-
-
-
-Location: Your choice
-
-Username: `azureuser`
-
-Password: `WindowsPassword@001`
-
-
-![image](https://user-images.githubusercontent.com/58414694/148490063-3657aeb5-541f-4e27-88a2-735ad990df0e.png)
-
-- Wait for it to setup the Windows 11 machine
-
-- After it's done, it will give you the IP address of the RDP.
-
-- Open your preferred Remote Desktop client, type the IP adress and use the credentials provided.
-
-
-### WARN
-
-THIS IS ONLY FOR EDUCATIONAL PURPOSES
-
-DON'T USE FOR MINING OR ILLEGAL USE
-
-*Roblox* games/Studio may have degraded performance and the in-game cursor may also not work due to it being connected via Remote Desktop.
-
----
-
-### OPTIONAL:
-
-2H: https://docs.microsoft.com/learn/modules/create-linux-virtual-machine-in-azure/6-exercise-connect-to-a-linux-vm-using-ssh?activate-azure-sandbox=true
-
-1H: https://docs.microsoft.com/learn/modules/build-a-web-app-with-mean-on-a-linux-vm/3-create-a-vm?activate-azure-sandbox=true
-
-FAQ: Script stuck at "checking"...? Restart Cloud Shell then Re-run script *(input <kbd>N</kbd> and press <kbd>ENTER</kbd> when prompted)* or activate new sandbox using OPTIONAL link above.
-
-#### Main Repository: https://github.com/kmille36/Windows-11-VPS
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://codepen.io/akxvau" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="akxvau" height="30" width="40" /></a>
-<a href="https://dev.to/akxvau" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg" alt="akxvau" height="30" width="40" /></a>
-<a href="https://twitter.com/itzakx21" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="itzakx21" height="30" width="40" /></a>
-<a href="https://stackoverflow.com/users/19373621/akxvau" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="akxvau" height="30" width="40" /></a>
-<a href="https://fb.com/akx.the.psycho" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="akx.the.psycho" height="30" width="40" /></a>
-<a href="https://instagram.com/akxvau" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="akxvau" height="30" width="40" /></a>
-</p>
+## License
+The content of this project itself is licensed under the [Creative Commons Attribution 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/), and the underlying source code used to format and display that content is licensed under the [MIT License](LICENSE.md).
